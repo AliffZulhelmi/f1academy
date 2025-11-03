@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 03, 2025 at 04:22 PM
+-- Generation Time: Nov 03, 2025 at 04:49 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -43,11 +43,11 @@ CREATE TABLE `drivers` (
 --
 
 INSERT INTO `drivers` (`id`, `fullname`, `team_name`, `sponsor_name`, `standing_position`, `points`, `biography`, `image_path`) VALUES
-(1, 'Max Verstappen', 'Red Bull Racing', 'Red Bull', 1, 25, 'Dominant world champion. Known for aggressive driving and speed.', 'image/MV.png'),
-(2, 'Charles Leclerc', 'Ferrari', 'Ferrari', 3, 15, 'Ferrari\'s star driver. Excellent qualifying pace.', 'image/CLC.png'),
-(3, 'Lando Norris', 'McLaren', 'McLaren', 2, 18, 'British star, known for consistency and humor.', 'image/Lando.png'),
-(4, 'George Russell', 'Mercedes', 'Mercedes', 5, 0, 'A young talent leading the Mercedes charge.', 'image/George.png'),
-(5, 'Fernando Alonso', 'Aston Martin', 'Aston Martin', 4, 0, 'The veteran champion, still showing incredible skill.', 'image/Alonso.png');
+(1, 'Max Verstappen', 'Red Bull Racing', 'Red Bull', 1, 50, 'Dominant world champion. Known for aggressive driving and speed.', 'image/MV.png'),
+(2, 'Charles Leclerc', 'Ferrari', 'Ferrari', 3, 30, 'Ferrari\'s star driver. Excellent qualifying pace.', 'image/CLC.png'),
+(3, 'Lando Norris', 'McLaren', 'McLaren', 2, 36, 'British star, known for consistency and humor.', 'image/Lando.png'),
+(4, 'George Russell', 'Mercedes', 'Mercedes', 4, 12, 'A young talent leading the Mercedes charge.', 'image/George.png'),
+(5, 'Fernando Alonso', 'Aston Martin', 'Aston Martin', 5, 10, 'The veteran champion, still showing incredible skill.', 'image/Alonso.png');
 
 -- --------------------------------------------------------
 
@@ -97,11 +97,11 @@ INSERT INTO `results` (`id`, `race_id`, `driver_id`, `position`, `points`) VALUE
 (1, 1, 1, 1, 25),
 (2, 1, 3, 2, 18),
 (3, 1, 2, 3, 15),
-(4, 5, 1, 1, 0),
-(5, 5, 3, 2, 0),
-(6, 5, 2, 3, 0),
-(7, 5, 4, 4, 0),
-(8, 5, 5, 5, 0);
+(4, 5, 1, 1, 25),
+(5, 5, 3, 2, 18),
+(6, 5, 2, 3, 15),
+(7, 5, 4, 4, 12),
+(8, 5, 5, 5, 10);
 
 -- --------------------------------------------------------
 
@@ -255,7 +255,7 @@ ALTER TABLE `races`
 -- AUTO_INCREMENT for table `results`
 --
 ALTER TABLE `results`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `sponsors`
