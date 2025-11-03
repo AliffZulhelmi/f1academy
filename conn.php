@@ -412,9 +412,9 @@ function get_driver_standings_data($conn) {
     ";
     $result = $conn->query($query);
     $data = [];
-    $rank = 1; 
+    // REMOVED: The unnecessary $rank = 1; variable
     while ($row = $result->fetch_assoc()) {
-        $row['standing_position'] = $rank++; 
+        // REMOVED: The unnecessary $row['standing_position'] = $rank++; assignment
         $data[] = $row;
     }
     return $data;

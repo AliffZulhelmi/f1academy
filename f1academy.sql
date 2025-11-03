@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 03, 2025 at 04:11 PM
+-- Generation Time: Nov 03, 2025 at 04:22 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -73,7 +73,7 @@ INSERT INTO `races` (`id`, `name`, `date`, `details`, `round_number`, `is_comple
 (2, 'Miami Grand Prix', '2025-05-04', 'Race held at Miami International Autodrome.', 2, 1),
 (3, 'Monaco Grand Prix', '2025-05-25', 'The legendary street race.', 3, 0),
 (4, 'Singapore Grand Prix', '2025-03-20', 'Marina Bay Street', 4, 0),
-(5, 'Sepang Grand Prix', '2025-06-21', 'Sepang International Circuit', 5, 0);
+(5, 'Sepang Grand Prix', '2025-06-21', 'Sepang International Circuit', 5, 1);
 
 -- --------------------------------------------------------
 
